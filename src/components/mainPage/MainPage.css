@@ -1,0 +1,72 @@
+.mainPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  margin-left: 30px;
+  -webkit-animation-name: mainPage-fadeIn;
+          animation-name: mainPage-fadeIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes mainPage-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainPage-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mainPage > h1 {
+  font-size: 2.2em;
+}
+
+.mainPage .trendList span {
+  font-weight: bold;
+}
+
+.mainPage .trendList {
+  color: #626263;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 420px) {
+  .mainPage > h1 {
+    font-size: 2.2em;
+    max-width: 320px;
+  }
+  .mainPage {
+    margin-left: 0;
+  }
+  .mainPage .trendList {
+    font-size: .9em;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .mainPage > h1 {
+    font-size: 1.4em;
+  }
+}
+/*# sourceMappingURL=MainPage.css.map */

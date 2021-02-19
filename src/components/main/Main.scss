@@ -1,0 +1,29 @@
+
+$text-color: #4a4a4a;
+
+
+.main .main_inner{
+    color: $text-color;
+    display: flex;
+    align-items: baseline;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 420px){
+    .main_inner{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column-reverse;
+        // padding-left: 10px;
+    }
+    .main{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .main_inner{
+        max-width: 200px;
+    }
+}

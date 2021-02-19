@@ -1,0 +1,30 @@
+.toggle_nav {
+  margin: 10px;
+}
+
+.toggle_nav .toggle_box {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.toggle_nav .toggle_box p {
+  height: 4px;
+  background: #0c0b0b;
+  margin: 2px 0px;
+  border-radius: 25px;
+}
+
+.toggle_box .one {
+  width: 30px;
+}
+
+.toggle_box .two {
+  width: 20px;
+}
+
+.toggle_box .three {
+  width: 10px;
+}
+/*# sourceMappingURL=ToggleNav.css.map */

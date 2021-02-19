@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAA;EACR,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,WAAW,EAAE,GAAG;CACnB;;AACD,AAAA,YAAY,CAAC,CAAC,CAAA;EACV,WAAW,EAAE,MAAM;CACtB",
+    "sources": [
+        "internetMsgError.scss"
+    ],
+    "names": [],
+    "file": "internetMsgError.css"
+}

@@ -1,0 +1,41 @@
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 40px;  
+}
+
+.images .singleImg{
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.images .singleImg img{
+    width: 100%;
+    object-fit: cover; 
+}
+
+.msgBox{
+    position: relative;
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 420px){
+    .images .singleImg img, .singleImg{
+        max-width: 70px !important;
+        height: 80px !important;
+    }
+    .images{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .images .singleImg{
+        width: 150px !important;
+    }
+}

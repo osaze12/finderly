@@ -1,0 +1,111 @@
+$background-color:#0c0b0b;
+$icons-color: #888787;
+
+.nav{
+    background: $background-color;
+    color: $icons-color;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 8px 0px 25px #b5b5b6;
+    z-index: 999;
+    animation-name: growIn;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+@keyframes growIn{
+    0%{
+        transform: scaleY(.8);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    padding:25px 0;
+}
+.nav .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav .bottom_nav{
+    margin-top: 100px;
+}
+.nav .logo{
+    margin-bottom: 60px;
+}
+.msgInfo{
+    font-size: .7em;
+    background: #0c0b0b;
+    color: #fff;
+    padding: 15px 0px;
+    border-radius: 5px;
+    animation-name: slideUp;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0, 0, 0.06, 1.43);
+}
+
+@keyframes slideUp{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.nav_single_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.nav_single_container span{
+    position: absolute;
+    left: 60px;
+    width:120px;
+    text-align: center;
+}
+
+@media screen and (max-width: 280px){
+    .nav ul .settings{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .nav .logo {
+        display: none;
+    }
+    .nav .bottom_nav {
+        display: none;
+    }
+    .nav ul{
+        display: flex;
+        align-items: baseline;
+    }
+    .nav ul li {
+        margin: 0 25px;
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
+    .nav{
+        padding: 10px 5px;
+        margin: 10px 0; 
+    }
+    .nav .nav_single_container span{
+        left:-26px;
+        top: -35px;
+    }
+    .nav_single_container span .msgInfo{
+        padding: 5px 0;
+    }
+}
+

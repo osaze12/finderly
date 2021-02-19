@@ -1,0 +1,50 @@
+.mainPage{
+    display: flex;
+    flex-direction: column;
+    flex:4;
+    margin-left: 30px;
+
+    animation-name: mainPage-fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes mainPage-fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.mainPage>h1{
+    font-size: 2.2em;
+}
+.mainPage .trendList span{
+    
+    font-weight: bold;
+}
+.mainPage .trendList{
+    color: #626263;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 420px){
+    .mainPage > h1 {
+        font-size: 2.2em;
+        max-width: 320px;
+    }
+    .mainPage{
+        margin-left: 0;
+    }
+    .mainPage .trendList {
+        font-size: .9em;
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width: 280px){
+    .mainPage > h1 {
+        font-size: 1.4em;
+    }
+}
