@@ -3,5 +3,5 @@ Discover beautiful African images,
 
 It is getting it's images from Unsplash API
 
-working site will soon be available
+working site [here](https://finderly.netlify.app)
 
